@@ -1,7 +1,7 @@
 from django.db import models
 from phonenumber_field.phonenumber import PhoneNumber
 
-class User(model.Model):
+class User(models.Model):
     
     # имя пользователя
     firstname = models.CharField(max_length=20)
