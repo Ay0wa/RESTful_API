@@ -1,5 +1,6 @@
 from django.db import models
 from phonenumber_field.phonenumber import PhoneNumber
+from phonenumber_field.modelfields import PhoneNumberField
 
 class User(models.Model):
     
