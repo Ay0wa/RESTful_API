@@ -74,20 +74,16 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = { 
-    'default': { 
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'restaurantdb', 
-        'USER': 'root', 
-        'PASSWORD': 'password', 
-        'HOST': '127.0.0.1', 
-        'PORT': '3306', 
-        'OPTIONS': { 
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" 
-        } 
-    } 
-} 
-
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "valorantmarketdb",
+        "USER": "root",
+        "PASSWORD": "Sk123321()",
+        "HOST": "localhost",
+        "PORT": "3306",
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
