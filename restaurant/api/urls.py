@@ -15,6 +15,7 @@ urlpatterns = [
     path('menu-items/<int:pk>/', MenuItemRetrieveUpdateDestroy.as_view(), name='menuitem-detail'),
     path('orders/', OrderListCreate.as_view(), name='order-list'),
     path('orders/<int:pk>/', OrderRetrieveUpdateDestroy.as_view(), name='order-detail'),
-    path('users/', UserListCreate.as_view(), name='customer-list'),
-    path('users/<int:pk>/', UserRetrieveUpdateDestroy.as_view(), name='customer-detail'),    path('ordersbyuser/<int:user_id>/', OrdersByUser.as_view(), name='ordersbyuser')
+    path('ordersbyuser/<int:user_id>/', OrdersByUser.as_view(), name='ordersbyuser'),
+    path('users/', UserListCreate.as_view(), name='user-list'),
+    path('users/<int:pk>/', UserRetrieveUpdateDestroy.as_view(), name='user-detail'),    
 ]
